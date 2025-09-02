@@ -1,0 +1,12 @@
+import React = require("react");
+import {Text, View} from "react-native"
+
+export default function Home({ navigation, route }: any) {
+    const { correo } = route.params;
+
+    return (
+        <View>
+            <Text>Hola {correo}, estas en la pantalla de home</Text>
+        </View>
+    );
+}
